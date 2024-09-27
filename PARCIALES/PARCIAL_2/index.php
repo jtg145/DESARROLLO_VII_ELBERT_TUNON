@@ -22,12 +22,46 @@
                 }
             }
         }
+
+        public function agregarRecurso(RecursoBiblioteca $recurso)
+        {
+
+        }
+
+        public function eliminarRecurso($id)
+        {
+
+        }
+
+        public function actualizarRecurso(RecursoBiblioteca $recurso)
+        {
+
+        }
+
+        public function actualizarEstadoRecurso($id, $nuevoEstado)
+        {
+
+        }
+        
+
+        public function buscarRecursosPorEstado($estado)
+        {
+
+        }
+
+        public function listarRecursos($filtroEstado = '', $campoOrden = 'id', $direccionOrden = 'ASC')
+        {
+
+        }
     }
 
     class Libro extends RecursoBiblioteca
     {
         public $isbn;
         public function obtenerDetallesPrestamo()
+        {
+            return $isbn;
+        }
 
     }
 
@@ -35,14 +69,18 @@
     {
         public $numeroEdicion;
         public function obtenerDetallesPrestamo()
-
+        {
+            return $numeroEdicion;
+        }
     }
 
     class DVD extends RecursoBiblioteca
     {
         public $duracion;
         public function obtenerDetallesPrestamo()
-
+        {
+            return  $duracion;
+        }
     }
-
+    
 ?>
